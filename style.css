@@ -1,23 +1,31 @@
 <style>
+
 	head{
 		color: aqua;
 	}
+
 	body{
-		color: fuchsia
+		text-align: center;
+		color: fuchsia;
 		font-family: 'Trebuchet MS', 'Times New Roman', serif;
-		background-color: #05ffb0;		
-	}
-	h1 {
-		color: orange;
+		background-color: azure;		
 	}
 
-	p{
-		border: 16px dotted blue;
+	h2, h3, h4, h5, h6 {
+		color: sandybrown;
+	}
 
+	h1{
+		color: seagreen;
 	}
 
 	#start{
 		color: purple;
+	}
+
+	.list{
+		border: 2px solid black;
+        color: black;
 	}
 
 </style>
