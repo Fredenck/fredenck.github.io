@@ -1,13 +1,18 @@
 <style>
-
-	h1 {
+	head{
+		color: aqua;
+	}
+	body{
 		color: fuchsia
 		font-family: 'Trebuchet MS', 'Times New Roman', serif;
-		background-color: #05ffb0;
+		background-color: #05ffb0;		
+	}
+	h1 {
+		color: orange;
 	}
 
 	p{
-		border: 4px dotted blue;
+		border: 16px dotted blue;
 
 	}
 
