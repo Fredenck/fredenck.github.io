@@ -29,106 +29,196 @@
 	}
 
 	nav{
-		float: right;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background: gray;
+        padding: 0 100px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        
 	}
 
 	nav ul{
 		margin: 0;
 		padding: 0;
-		list-style: none;
+        display: flex;
 	}
 
 	nav li{
-		display: inline-block;
-		margin-left: 70px;
-		padding-top: 10px;
-
-		position: relative;
+        list-style: none;
 	}
 
 	nav ul li a{
-		color: #444;
+		color: #fff;
+        padding: 0 20px;
 		text-decoration: none;
 		text-transform: uppercase;
-		font-size: 14px;
+		font-size: 1.1em;
+        font-weight: bold;
 	}
-
-	nav a.hover{
-		color: #000;
-	}
-
-	nav a::before{
-		content: '';
-		display: block;
-		height: 5px;
-		background-color: #444;
-
-		position: absolute;
-		top: 0;
-		width: 0%;
-
-		transition: all ease-in-out 250ms;
-	}
-
-	nav a:hover::before{
-		width: 100%;
-	}
+    .brand{
+        font-size: 1.8em;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
     body {
 		margin: 0;
-		background: #1f78b4;
-		color: #00ffaa;
+        padding: 0;
+        color: #222222;
+        margin-top: 80px;
         text-align: center;
     }
+/*end header*/
 
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
 
-    .column h2{
-        text-align: center;
-        color: #00ffaa;
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
+}
+
+.masthead-intro {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    /* Layout Declarations */
+    color: #F1C863;
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.introduction-section > p,
+.location-section > p,
+.questions-section,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questions-section > h2 {
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Layout */
+    margin: 2em 0 1em 0;
+}
+
+section > h1 {
+    margin-top: 2em;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
+}
+
+.masthead-intro {
+  margin-bottom: 0.1em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+  margin-top: -0.2em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.introduction > p,
+.location > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+h2 {
+    /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.content-footer {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #73A8C2;
+  text-decoration: none;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: #F7EDE1;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F1C863;
+}
+  
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
     }
-
-    .column p{
-        color: #00ffaa;
+    .masthead-heading {
+        font-size: 3em;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create three equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 10px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .midC{
-        border-right: 1px solid black;
-        border-left: 1px solid black;
-    }
-
-
-    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-      }
-    }
-
-    .responsive {
-        width: 60%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        border-radius: 50%;
-    }
-</style>
-
+    .content-footer {
+        padding: 2em 2.5em;
+  }
+}

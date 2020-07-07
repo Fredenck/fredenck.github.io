@@ -4,44 +4,62 @@
     
     <head>
         <title>About Frederick</title>
-        
-        <header>
-			<div class="container">
-				<name>Frederick Zhang</name>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="#">Filler</a></li>
-						<li><a href="#">Filler</a></li>
-						<li><a href="#">Filler</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-        
     </head>
     
     <body>
-        <div class="row">
-            <div class="column">
-                <img src= "content/about/me1.JPG" class="responsive">
-            </div>
-
-            <div class="column midC">
-                <h2>Frederick Zhang</h2>
-                
-                <img src= "content/about/me1.JPG" class="responsive">
-                
-                <p>Hi! My name is Frederick Zhang and I am a rising junior at Irvington High School, California. Some of my interests include swimming, biking, playing the saxophone, playing the variety of Riot Games, and working with computer science. I was born in Illinois, then moved to Idaho when I was a few months old. Then, I moved to California at the end of third grade. Here, I attended Fred E. Weibel Elementory School, and Horner Junior High School. </p>
-                <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/frederick.zhang.3152">Share on Facebook</a> -->
-            </div>
-
-            <div class="column">
-                <img src= "content/about/me1.JPG" class="responsive">
-            </div>
-        </div> 
+        <nav id="navbar">
+            <a href="#" class="brand">Frederick Zhang</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
         
+        <header class='masthead'>
+          <p class='masthead-intro'>Hi I'm</p>
+          <h1 class='masthead-heading'>Frederick!</h1>
+        </header>
+        <section class="introduction-section">
+            <h1>Introduction</h1>
+            <p>introintrointro.</p>
+            <p>I love seeing what kind of thigns computer science can do.</p>
+        </section>
+        <section class="location-section">
+            <h1>Where I'm From</h1>
+            <p>I'm originally from Illinois, but I lived the majority of my life in Idaho, and I am now in California. </p>
+        </section>
+        <section class="questions-section">
+            <h1>More About Me</h1>
+            <h2>What are your favorite hobbies?</h2>
+            <p>I enjoy bicycling, swimming, playing the saxophone (occasionally...), working on small projects (like this website or a microcontroller project), and playing League of Legends as well as Valorant.</p>
+            <h2>What's your dream job?</h2>
+            <p>idk man.</p>
+        </section>
+
+        <footer class="content-footer">
+            <p>Say hi to me on these social networks:</p>
+            <ul class="social">
+                <li><a class="css-is-deranged" href="https://github.com/fredenck/">GitHub</a></li>
+                <li><a class="css-is-deranged" href="https://www.linkedin.com/in/frederick-zhang-502866103/">LinkedIn</a></li>
+                <li><a class="css-is-deranged" href="mailto:fredzhang2013@gmail.com">Email</a></li>
+            </ul>
+
+        </footer>
+        
+        <script type="text/javascript">
+            var lastScrollTop = 0;
+            navbar = document.getElementById("navbar");
+            window.addEventListener("scroll", function(){
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop>lastScrollTop){
+                    navbar.style.top = "-80px";
+                }else{
+                    navbar.style.top = "0";
+                }
+                lastScrollTop = scrollTop;
+            })
+        </script>
     </body>
     
 </html>
