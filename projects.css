@@ -87,6 +87,8 @@ body {
 }
 .project{
     display: flex;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 * {
   box-sizing: border-box;
