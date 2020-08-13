@@ -1,80 +1,79 @@
-<style>
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    margin: 0;
+}
 
-	head{
-		margin: 0;
-		font-family: 'Work-sans', sans-serif;
-		font-weight: 400;
-	}
-	
-	.container{
-		width: 80%;
-		margin: 0, auto;
-	}
+.meet{
+    color: white;
+    background-image: url("img/meside.JPG");
+    padding: 10em 0;
+    background-size: contain;
+    text-align: center;
+}
 
-	header{
-		background: grey;
-	}
+.meet-intro{
+    font-style: italic;
+    font-size: 180%;
+    line-height: 0px;
+}
 
-	header::after{
-		content: '';
-		display: table;
-		clear: both;
-	}
+.meet-heading{
+    margin-top: -5px;
+    font-weight: 900;
+    font-size: 350%;
+}
 
-	name{
-		color: black;
-		margin-left: 10px;
-		float: left;
-		padding: 10px 0;
-	}
+.start{
+    text-align: center;
+}
 
-	nav{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 80px;
-        background: gray;
-        padding: 0 100px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.5s;
-        
-	}
+.column {
+/*    width: 50%;*/
+    padding: 10px;
+}
 
-	nav ul{
-		margin: 0;
-		padding: 0;
-        display: flex;
-	}
+.column img{
+    width:270px; 
+    height:220px;
+    border-radius: 50px;
+    float: left;
+    object-fit: cover;
+    margin-right: 25px;
+}
 
-	nav li{
-        list-style: none;
-	}
+.column h3, .column h5{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 
-	nav ul li a{
-		color: #fff;
-        padding: 0 20px;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 1.1em;
-        font-weight: bold;
-	}
-    .brand{
-        font-size: 1.8em;
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none;
+.column h5{
+    color: seagreen;
+}
+
+.column h3{
+    color: cornflowerblue;
+}
+
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.project{
+    display: flex;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
     }
-
-    body {
-		margin: 0;
-        padding: 0;
-        color: #222222;
-        margin-top: 100px;
-        text-align: center;
-    }
-
-</style>
+}
 
